@@ -31,6 +31,14 @@ const Navigator = () => {
       </Grid>
       <Grid item>
         <Link
+          to="/"
+          className={links}
+        >
+          Announcements
+        </Link>
+      </Grid>
+      <Grid item>
+        <Link
           to="/Travel"
           className={links}
         >
@@ -43,6 +51,14 @@ const Navigator = () => {
           className={links}
         >
           Registry
+        </Link>
+      </Grid>
+      <Grid item>
+        <Link
+          to="/RSVP" 
+          className={links}
+        >
+          RSVP 
         </Link>
       </Grid>
     </Grid>
