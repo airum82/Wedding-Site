@@ -1,34 +1,33 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import AppBar from '@material-ui/core/AppBar';
+import Navigator from './Navigator';
+import Title from './Title';
+import Grid from '@material-ui/core/Grid';
 
 const Header = ({ siteTitle }) => (
   <AppBar
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      flexGrow: 1,
+      background: '#9AAB89',
     }}
   >
-    <div
+    <Grid
+      container
+      direction="row"
+      alignContent="center"
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        height: 50,
+        width: "100%",
       }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Home
-        </Link>
-      </h1>
-    </div>
+    >    
+      <Grid item style={{ paddingLeft: 10 }}>
+        <Title />
+      </Grid>
+      <Grid item container xs={true} justify="flex-end">
+        <Navigator />    
+      </Grid>
+    </Grid>
   </AppBar>
 )
 
