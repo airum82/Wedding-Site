@@ -7,8 +7,10 @@
   "dependencies": {
     "@material-ui/core": "^4.8.1",
     "@material-ui/styles": "^4.7.1",
+    "firebase": "^7.6.1",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
+    "gatsby-plugin-firebase": "^0.1.7",
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^3.0.27",
@@ -22,6 +24,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
